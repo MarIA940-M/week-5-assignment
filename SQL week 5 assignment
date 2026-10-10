@@ -1,0 +1,24 @@
+
+/*
+Assignment: Database Indexing and Optimization
+Week: 5
+File: answers.sql
+Database: MySQL
+*/
+
+-- Question 1: Drop the IdxPhone index from the customers table.
+DROP INDEX IdxPhone ON customers;
+
+
+-- Question 2: Create the bob user with localhost access.
+CREATE USER 'bob'@'localhost'
+IDENTIFIED BY '_S$cu3r3!_';
+
+
+-- Question 3: Grant INSERT privileges on the salesDB database.
+GRANT INSERT ON salesDB.* TO 'bob'@'localhost';
+
+
+-- Question 4: Change the password for the bob user.
+ALTER USER 'bob'@'localhost'
+IDENTIFIED BY '_P$55!23_';
